@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="circleView" id="gTV-IL-0wX" customClass="CircleViewCell" customModule="Film_INA" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="232" height="164"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="232" height="164"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VI8-uE-k14">
+                        <rect key="frame" x="0.0" y="105" width="232" height="25"/>
+                        <color key="backgroundColor" red="0.9185144305229187" green="0.0" blue="0.35288254223511017" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="taZ-Gf-EKa">
+                        <rect key="frame" x="0.0" y="130" width="232" height="34"/>
+                        <color key="backgroundColor" red="0.91727197170257568" green="0.19842177629470825" blue="0.35684791207313538" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <state key="normal" title="Read More">
+                            <color key="titleColor" red="0.2277272316" green="0.57415781730000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </state>
+                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YWh-DG-53o">
+                        <rect key="frame" x="0.0" y="0.0" width="232" height="104"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="VI8-uE-k14" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="B9p-rz-YQ3"/>
+                <constraint firstItem="YWh-DG-53o" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="BEt-Nm-X2V"/>
+                <constraint firstItem="YWh-DG-53o" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="KDw-im-j3W"/>
+                <constraint firstAttribute="trailing" secondItem="YWh-DG-53o" secondAttribute="trailing" id="Occ-Fv-0OU"/>
+                <constraint firstItem="taZ-Gf-EKa" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Paa-yk-208"/>
+                <constraint firstItem="taZ-Gf-EKa" firstAttribute="top" secondItem="VI8-uE-k14" secondAttribute="bottom" id="SDk-QJ-jQb"/>
+                <constraint firstItem="VI8-uE-k14" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="105" id="Xrr-4z-OBx"/>
+                <constraint firstAttribute="trailing" secondItem="VI8-uE-k14" secondAttribute="trailing" id="dHU-lQ-7JL"/>
+                <constraint firstItem="VI8-uE-k14" firstAttribute="top" secondItem="YWh-DG-53o" secondAttribute="bottom" constant="1" id="hoG-4B-PCy"/>
+                <constraint firstAttribute="bottom" secondItem="taZ-Gf-EKa" secondAttribute="bottom" id="kdk-cE-1my"/>
+                <constraint firstItem="taZ-Gf-EKa" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="130" id="nT9-FS-Lt9"/>
+                <constraint firstAttribute="trailing" secondItem="taZ-Gf-EKa" secondAttribute="trailing" id="qBs-dT-ye0"/>
+                <constraint firstItem="VI8-uE-k14" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="rvT-Qj-c2l"/>
+                <constraint firstAttribute="trailing" secondItem="VI8-uE-k14" secondAttribute="trailing" id="xc8-8j-L74"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="234" height="168"/>
+            <connections>
+                <outlet property="btnRead" destination="taZ-Gf-EKa" id="rpL-Id-1ZO"/>
+                <outlet property="imageView" destination="YWh-DG-53o" id="trj-Wb-nFq"/>
+                <outlet property="juduLbl" destination="VI8-uE-k14" id="yDd-ff-FVl"/>
+            </connections>
+            <point key="canvasLocation" x="278.26086956521743" y="196.20535714285714"/>
+        </collectionViewCell>
+    </objects>
+</document>
